@@ -2,7 +2,7 @@
 
 :computer: *Faculdade de Ciências da Universidade do Porto* :computer:
 
-![](https://picard.musicbrainz.org/static/img/picard-icon-large.svg)
+![logo](https://picard.musicbrainz.org/static/img/picard-icon-large.svg)
 
 ### Group Elements
 - Tiago Martins
