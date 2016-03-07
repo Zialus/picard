@@ -1,4 +1,4 @@
-# Sofware Architecture 2015/2016
+# Software Architecture 2015/2016
 
 :computer: *Faculdade de Ciências da Universidade do Porto* :computer:
 
