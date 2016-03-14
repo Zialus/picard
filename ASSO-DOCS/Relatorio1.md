@@ -27,3 +27,10 @@ The development of [Picard](http://picard.musicbrainz.org) started in 2003, and 
 The developer community is mostly situated in North America and Europe.
 
 Bug tracking is done centrally at http://tickets.musicbrainz.org/. 
+
+## Issues
+
+This Project does not use the Github [Issues](https://github.com/features#issues) functionality, instead Musicbrainz uses it's own bug tracker which uses the software [JIRA Software](https://www.atlassian.com/software/jira)
+
+
+![](issues-history.PNG)
