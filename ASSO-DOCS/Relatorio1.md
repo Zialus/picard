@@ -11,6 +11,15 @@
 - Dinis Costa
 - Saúl Costa
 
+### Description
+[MusicBrainz Picard] (http://picard.musicbrainz.org) is a software application used to identify, tag and organize locally stored music collections. It is developed mainly by the San Luis Obispo, CA, USA based, tax-exempt and not-for-profit [MetaBrainz Foundation] (https://metabrainz.org). It is also free and open source software (FOSS), written in Python.
+
+The program uses the existing metadata and/or the acoustic fingerprint stored in local music files and compares it to the MusicBrainz database. The database is maintained bay the community, therefore many songs might not yet be in the database, so the mission of tagging the music file is up to the end user. The core data of the database is in the public domain as is released under the CC0 license while accessory/supplementary data is released under the CC BY-NC-SA 3.0 license, while the database itself is written in Perl/PostgreSQL (more information about the database and - if you want, to download it - can be accessed on the [MusicBrainz Database] (http://musicbrainz.org/doc/MusicBrainz_Database) website). Of course, the more informtion the database have about a particular recording, the more information it can display in the music file.
+
+Outside the online functionalities, it is a normal album-oriented tag editor, with support for plugins and personalization, supporting virtually every music file format and its respective metadata container, be it open-source or commercial, be it a physical release or a digital download.
+
+The name chosen for the software is a hommage to Captain Jean-Luc Picard, the main character in the popular 1987-1994 sci-fi series Star Trek: The Next Generation, portrayed by Sir Patrick Stewart, OBE.
+
 ### Requirements
 #### System Requirements
 
