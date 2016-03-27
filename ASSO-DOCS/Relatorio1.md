@@ -14,7 +14,7 @@
 ### Description
 [MusicBrainz Picard] (http://picard.musicbrainz.org) is a software application used to identify, tag and organize locally stored music collections. It is developed mainly by the San Luis Obispo, CA, USA based, tax-exempt and not-for-profit [MetaBrainz Foundation] (https://metabrainz.org). It is also free and open source software (FOSS), written in Python.
 
-The program uses the existing metadata and/or the acoustic fingerprint stored in local music files and compares it to the MusicBrainz database. The database is maintained by the community, therefore many songs might not yet be in the database, so the mission of tagging the music file is up to the end user. Of course, the more informtion the database have about a particular recording, the more information it can display in the music file.
+The program uses the existing metadata and/or the acoustic fingerprint stored in local music files and compares it to the MusicBrainz database. The database is maintained by the community, therefore many songs might not yet be in the database, so the mission of tagging the music file is up to the end user. Of course, the more information the database have about a particular recording, the more information it can display in the music file.
 
 Outside the online functionalities, it is a normal album-oriented tag editor, with support for various plugins and services, supporting virtually every music file format and its respective metadata container, be it open-source or commercial, lossy or lossless, physical release or digital download.
 
@@ -41,7 +41,24 @@ The name chosen for the software is a hommage to Captain Jean-Luc Picard, the ma
 ### Requirements
 #### System Requirements
 
-[MusicBrainz Picard] (http://picard.musicbrainz.org) requires a Linux/Mac OS X/Windows system with network connectivity and also needs Python to be installed.
+[MusicBrainz Picard] (http://picard.musicbrainz.org) requires a Linux/Mac OS, X/Windows system with network connectivity and also needs Python to be installed.
+
+#### Functional Requirements (Features)
+
+**Clustering** 
+Picard read and process the metadata from the files. Pressing the "Cluster" button allows to group the files into album clusters. The "Unmatched files" folder stores the files that are not matched into album clusters.
+
+**Lookup and querying MusicBrainz**
+The lookup can be automatic or manual. By using the "Lookup" button in the toolbar, Picard will query MusicBrainz and attempt to find the best match to the user´s cluster or file. The alternative is to manually lookup. Also, if the user select a set of files and click "Scan", Picard will find AcoustIDs based on audio fingerprint for the files, and query MusicBrainz to find a track that matches them. 
+
+**Saving**
+After matching up files to albums, users can click the "Save" button to save that track/album. 
+
+Additionaly, Picard can be customized using scripts and plugins (i.e. customize how to apply the MusicBrainz metadata to files, encapsulate scripting, download cover art, and add other functionality to Picard).
+
+#### Non-Functional Requeriments
+
+
 
 ### Development
 
@@ -57,6 +74,6 @@ The development of [Picard](http://picard.musicbrainz.org) started in 2003, and 
 
 This Project does not use the Github [Issues](https://github.com/features#issues) functionality, instead Musicbrainz uses it's own [bug tracker](http://tickets.musicbrainz.org/) which uses the software [JIRA Software](https://www.atlassian.com/software/jira)
 
-Aside from collecting bugs to fix, the developers seem to use the Issues infrastructure as a way to track which feautures will be implemented next and by whom. They tag those new feature with the particular version that should have them implemented.
+Aside from collecting bugs to fix, the developers seem to use the Issues infrastructure as a way to track which features will be implemented next and by whom. They tag those new feature with the particular version that should have them implemented.
 
 ![](issues-history.PNG)
