@@ -39,7 +39,8 @@ After matching up files to albums, users can click the "Save" button to save tha
 
 Additionaly, Picard can be customized using scripts and plugins (i.e. customize how to apply the MusicBrainz metadata to files, encapsulate scripting, download cover art, and add other functionality to Picard).
 
-#### Supported file formats and respective metadata container
+ **Supported file formats and respective metadata container**
+ 
 |File Format|Metadata Container|
 |  :---:      |  :---:      |
 |AAC|iTunes MP4|
