@@ -22,9 +22,6 @@ The name chosen for the software is a hommage to Captain Jean-Luc Picard, the ma
 
 
 ### Requirements
-#### System Requirements
-
-MusicBrainz Picard requires a Linux/Mac OS, X/Windows system with network connectivity and also needs Python to be installed.
 
 #### Functional Requirements (Features)
 
@@ -37,7 +34,7 @@ The lookup can be automatic or manual. By using the "Lookup" button in the toolb
 **Saving** : 
 After matching up files to albums, users can click the "Save" button to save that track/album. 
 
-Additionaly, Picard can be customized using scripts and plugins (i.e. customize how to apply the MusicBrainz metadata to files, encapsulate scripting, download cover art, and add other functionality to Picard).
+Additionaly, Picard can be customized using scripts and plugins (i.e. customize how to apply the MusicBrainz metadata to files, encapsulate scripting, download cover art, and add other functionalities to Picard).
 
  **Supported file formats and respective metadata container**
  
@@ -59,6 +56,9 @@ Additionaly, Picard can be customized using scripts and plugins (i.e. customize 
 |WMA|ASF|
 
 #### Non-Functional Requeriments
+
+**System Requirements** : MusicBrainz Picard requires a Linux/Mac OS, X/Windows system with network connectivity and also needs Python to be installed.
+
 (TO DO 
 Maintainability, usability, acessibility ... )
 
