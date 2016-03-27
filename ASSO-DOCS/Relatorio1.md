@@ -45,13 +45,13 @@ The name chosen for the software is a hommage to Captain Jean-Luc Picard, the ma
 
 #### Functional Requirements (Features)
 
-**Clustering** 
+**Clustering** : 
 Picard read and process the metadata from the files. Pressing the "Cluster" button allows to group the files into album clusters. The "Unmatched files" folder stores the files that are not matched into album clusters.
 
-**Lookup and querying MusicBrainz**
+**Lookup and querying MusicBrainz** : 
 The lookup can be automatic or manual. By using the "Lookup" button in the toolbar, Picard will query MusicBrainz and attempt to find the best match to the user´s cluster or file. The alternative is to manually lookup. Also, if the user select a set of files and click "Scan", Picard will find AcoustIDs based on audio fingerprint for the files, and query MusicBrainz to find a track that matches them. 
 
-**Saving**
+**Saving** : 
 After matching up files to albums, users can click the "Save" button to save that track/album. 
 
 Additionaly, Picard can be customized using scripts and plugins (i.e. customize how to apply the MusicBrainz metadata to files, encapsulate scripting, download cover art, and add other functionality to Picard).
