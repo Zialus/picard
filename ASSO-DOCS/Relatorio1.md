@@ -57,7 +57,8 @@ After matching up files to albums, users can click the "Save" button to save tha
 Additionaly, Picard can be customized using scripts and plugins (i.e. customize how to apply the MusicBrainz metadata to files, encapsulate scripting, download cover art, and add other functionality to Picard).
 
 #### Non-Functional Requeriments
-
+(TO DO 
+Maintainability, usability, acessibility ... )
 
 
 ### Development
