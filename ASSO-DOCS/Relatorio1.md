@@ -20,6 +20,25 @@ Outside the online functionalities, it is a normal album-oriented tag editor, wi
 
 The name chosen for the software is a hommage to Captain Jean-Luc Picard, the main character in the popular 1987-1994 sci-fi series Star Trek: The Next Generation, portrayed by Sir Patrick Stewart, OBE.
 
+
+### Requirements
+#### System Requirements
+
+MusicBrainz Picard requires a Linux/Mac OS, X/Windows system with network connectivity and also needs Python to be installed.
+
+#### Functional Requirements (Features)
+
+**Clustering** : 
+Picard reads and process the metadata from the files. Pressing the "Cluster" button allows to group the files into album clusters. The "Unmatched files" folder stores the files that are not matched into album clusters.
+
+**Lookup and querying MusicBrainz** : 
+The lookup can be automatic or manual. By using the "Lookup" button in the toolbar, Picard will query MusicBrainz and attempt to find the best match to the user´s cluster or file. The alternative is to manually lookup. Also, if the user select a set of files and click "Scan", Picard will find AcoustIDs based on audio fingerprint for the files, and query MusicBrainz to find a track that matches them. 
+
+**Saving** : 
+After matching up files to albums, users can click the "Save" button to save that track/album. 
+
+Additionaly, Picard can be customized using scripts and plugins (i.e. customize how to apply the MusicBrainz metadata to files, encapsulate scripting, download cover art, and add other functionality to Picard).
+
 #### Supported file formats and respective metadata container
 |File Format|Metadata Container|
 |  :---:      |  :---:      |
@@ -38,24 +57,6 @@ The name chosen for the software is a hommage to Captain Jean-Luc Picard, the ma
 |WavPack|APEv2 Tag|
 |WMA|ASF|
 
-### Requirements
-#### System Requirements
-
-[MusicBrainz Picard] (http://picard.musicbrainz.org) requires a Linux/Mac OS, X/Windows system with network connectivity and also needs Python to be installed.
-
-#### Functional Requirements (Features)
-
-**Clustering** : 
-Picard read and process the metadata from the files. Pressing the "Cluster" button allows to group the files into album clusters. The "Unmatched files" folder stores the files that are not matched into album clusters.
-
-**Lookup and querying MusicBrainz** : 
-The lookup can be automatic or manual. By using the "Lookup" button in the toolbar, Picard will query MusicBrainz and attempt to find the best match to the user´s cluster or file. The alternative is to manually lookup. Also, if the user select a set of files and click "Scan", Picard will find AcoustIDs based on audio fingerprint for the files, and query MusicBrainz to find a track that matches them. 
-
-**Saving** : 
-After matching up files to albums, users can click the "Save" button to save that track/album. 
-
-Additionaly, Picard can be customized using scripts and plugins (i.e. customize how to apply the MusicBrainz metadata to files, encapsulate scripting, download cover art, and add other functionality to Picard).
-
 #### Non-Functional Requeriments
 (TO DO 
 Maintainability, usability, acessibility ... )
@@ -63,7 +64,7 @@ Maintainability, usability, acessibility ... )
 
 ### Development
 
-There are several components that form **MusicBrainz** and that are necessary for its functioning: the **MusicBrainz Server**, **MusicBrainz Database**, **web service** and related **client libraries**, and applications/services. 
+There are several components that form MusicBrainz and that are necessary for its functioning: the **MusicBrainz Server**, **MusicBrainz Database**, **web service** and related **client libraries**, and applications/services. 
 
 The [MusicBrainz Server] (https://musicbrainz.org/doc/MusicBrainz_Server) is written in Perl and is an open source software application that provides the primary interface to the [MusicBrainz Database] (https://musicbrainz.org/doc/MusicBrainz_Database). Users can edit the data on the website, and the web service power client applications like MusicBrainz Picard.
 
