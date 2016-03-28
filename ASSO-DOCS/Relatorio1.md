@@ -18,7 +18,7 @@ The program uses the existing metadata and/or the acoustic fingerprint stored in
 
 Outside the online functionalities, it is a normal album-oriented tag editor, with support for various plugins and services, supporting virtually every music file format and its respective metadata container, be it open-source or commercial, lossy or lossless, physical release or digital download.
 
-The name chosen for the software is a hommage to Captain Jean-Luc Picard, the main character in the popular 1987-1994 sci-fi series Star Trek: The Next Generation, portrayed by Sir Patrick Stewart, OBE.
+The name chosen for the software is a homage to Captain Jean-Luc Picard, the main character in the popular 1987-1994 sci-fi series Star Trek: The Next Generation, portrayed by Sir Patrick Stewart, OBE.
 
 
 ### Requirements
@@ -34,33 +34,41 @@ The lookup can be automatic or manual. By using the "Lookup" button in the toolb
 **Saving** : 
 After matching up files to albums, users can click the "Save" button to save that track/album. 
 
-Additionaly, Picard can be customized using scripts and plugins (i.e. customize how to apply the MusicBrainz metadata to files, encapsulate scripting, download cover art, and add other functionalities to Picard).
+Additionally, Picard can be customized using scripts and plugins (i.e. customize how to apply the MusicBrainz metadata to files, encapsulate scripting, download cover art, and add other functionalities to Picard).
 
  **Supported file formats and respective metadata container**
  
 |File Format|Metadata Container|
-|  :---:      |  :---:      |
-|AAC|iTunes MP4|
+|:---------:|:----------------:|
+|AAC        |iTunes MP4|
 |Apple Lossless|iTunes MP4|
-|FLAC|Vorbis Comment|
+|FLAC       |Vorbis Comment|
 |Monkey's Audio|APEv2 Tag|
-|MP3|ID3|
-|Musepack|APEv2 Tag|
-|Ogg Vorbis|Vorbis Comment|
-|OptimFROG|APEv2 Tag|
-|Opus|Vorbis Comment|
-|Speex|Vorbis Comment|
-|TTA|ID3|
-|WAV|N/A|
-|WavPack|APEv2 Tag|
-|WMA|ASF|
+|MP3        |ID3|
+|Musepack   |APEv2 Tag|
+|Ogg Vorbis |Vorbis Comment|
+|OptimFROG  |APEv2 Tag|
+|Opus       |Vorbis Comment|
+|Speex      |Vorbis Comment|
+|TTA        |ID3|
+|WAV        |N/A|
+|WavPack    |APEv2 Tag|
+|WMA        |ASF|
 
-#### Non-Functional Requeriments
+#### Non-Functional Requirements
 
 **System Requirements** : MusicBrainz Picard requires a Linux/Mac OS, X/Windows system with network connectivity and also needs Python to be installed.
 
-(TO DO 
-Maintainability, usability, acessibility ... )
+---
+**TO-DO!!!!!!!!!!!!!!!!!**
+
+- Maintainability
+- usability
+- accessibility 
+- ... 
+
+---
+
 
 
 ### Development
@@ -79,15 +87,14 @@ This Project does not use the Github [Issues](https://github.com/features#issues
 
 Aside from collecting information about bugs (which can then be assigned to a particular developer to fix), the developers seem to use the Issues infrastructure as a way to track which features will be implemented next and by whom. They make use of a tagging system to indicate by which version that a specific feature needs to be implemented.
 
-Overall the 
+Overall the issue tracker seems to be the central place to track the progress of this project. 
 
+As the picture below shows the team is reasonably quick to address the created issues.
 
-### Continious Integration
+![](issues-history.PNG)
 
-[Jenkins](https://jenkins.io/) is the 
+### Continuous Integration
 
-http://build.oxygene.sk/job/package-picard-win-daily/
-https://oxygene.sk/2013/12/daily-picard-builds-for-windows/
-http://build.oxygene.sk/job/package-picard-osx-daily/
-
-
+Until [2013] (https://oxygene.sk/2013/12/daily-picard-builds-for-windows/) there wasn't any kind of automation behind the build process. At that point [Jenkins](https://jenkins.io/) was chosen as a tool to automate the testing of builds for [Windows](http://build.oxygene.sk/job/package-picard-win-daily/
+), and later on for [OS X](http://build.oxygene.sk/job/package-picard-osx-daily/
+)
