@@ -77,6 +77,17 @@ The development of [Picard](http://picard.musicbrainz.org) started in 2003, and 
 
 This Project does not use the Github [Issues](https://github.com/features#issues) functionality, instead Musicbrainz uses it's own [bug tracker](http://tickets.musicbrainz.org/) which uses the software [JIRA Software](https://www.atlassian.com/software/jira)
 
-Aside from collecting bugs to fix, the developers seem to use the Issues infrastructure as a way to track which features will be implemented next and by whom. They tag those new feature with the particular version that should have them implemented.
+Aside from collecting information about bugs (which can then be assigned to a particular developer to fix), the developers seem to use the Issues infrastructure as a way to track which features will be implemented next and by whom. They make use of a tagging system to indicate by which version that a specific feature needs to be implemented.
 
-![](issues-history.PNG)
+Overall the 
+
+
+### Continious Integration
+
+[Jenkins](https://jenkins.io/) is the 
+
+http://build.oxygene.sk/job/package-picard-win-daily/
+https://oxygene.sk/2013/12/daily-picard-builds-for-windows/
+http://build.oxygene.sk/job/package-picard-osx-daily/
+
+
