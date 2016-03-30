@@ -5,21 +5,22 @@
 ![logo](https://picard.musicbrainz.org/static/img/picard-icon-large.svg)
 
 ### Group Elements
-- Tiago Martins
-- Raul Ferreira
-- Paula Giesta
-- Dinis Costa
-- Saúl Costa
+
+-   Dinis Costa
+-   Paula Giesta
+-   Raul Ferreira
+-   Tiago Martins
+-   Saúl Costa
 
 ### Description
-[MusicBrainz Picard] (http://picard.musicbrainz.org) is a software application used to identify, tag and organize locally stored music collections. It is developed mainly by the San Luis Obispo, CA, USA based, tax-exempt and not-for-profit [MetaBrainz Foundation] (https://metabrainz.org). It is also free and open source software (FOSS), written in Python.
+
+[MusicBrainz Picard](http://picard.musicbrainz.org) is a software application used to identify, tag and organize locally stored music collections. It is developed mainly by the San Luis Obispo, CA, USA based, tax-exempt and not-for-profit [MetaBrainz Foundation](https://metabrainz.org). It is also free and open source software (FOSS), written in Python.
 
 The program uses the existing metadata and/or the acoustic fingerprint stored in local music files and compares it to the MusicBrainz database. The database is maintained by the community, therefore many songs might not yet be in the database, so the mission of tagging the music file is up to the end user. Of course, the more information the database has about a particular recording, the more information it can display in the music file.
 
 Outside the online functionalities, it is a normal album-oriented tag editor, with support for various plugins and services, supporting virtually every music file format and its respective metadata container, be it open-source or commercial, lossy or lossless, physical release or digital download.
 
 The name chosen for the software is a homage to Captain Jean-Luc Picard, the main character in the popular 1987-1994 sci-fi series Star Trek: The Next Generation, portrayed by Sir Patrick Stewart, OBE.
-
 
 ### Requirements
 
@@ -38,7 +39,7 @@ Additionally, Picard can be customized using scripts and plugins (i.e. customize
 
  **Supported file formats and respective metadata container**
 
-|   File Format |Metadata Container|
+|    File Format|Metadata Container|
 |:-------------:|:----------------:|
 |AAC            |iTunes MP4        |
 |Apple Lossless |iTunes MP4        |
@@ -59,29 +60,25 @@ Additionally, Picard can be customized using scripts and plugins (i.e. customize
 
 **System Requirements** : MusicBrainz Picard requires a Linux/Mac OS, X/Windows system with network connectivity and also needs Python to be installed.
 
----
+<!--
 **TO-DO!!!!!!!!!!!!!!!!!**
-
 - Maintainability
 - usability
 - accessibility
 - ...
-
----
-
-
+-->
 
 ### Development process
 
-Picard never had a very well defined development process. It started primarily as a single developer project, in which the community used to provide patches. Nowadays, since the project moved to Github, they use the pull-request functionality to receive bug fixes from the community. Over the years, the development process didn't change that much, as described in a response from a former Picard contributor to a [question] (https://community.metabrainz.org/t/picards-development-process/13577) posted by our group in the MetaBrainz Community forum.
+Picard never had a very well defined development process. It started primarily as a single developer project, in which the community used to provide patches. Nowadays, since the project moved to Github, they use the pull-request functionality to receive bug fixes from the community. Over the years, the development process didn't change that much, as described in a response from a former Picard contributor to a [question](https://community.metabrainz.org/t/picards-development-process/13577) posted by our group in the MetaBrainz Community forum.
 
 >I don't think there has been any thoughts on the development model for Picard, nor is there any strict model followed. In the early days it was mostly a single developer, supported by patches from the community. In the last years a lot of people have contributed and there is a small set of people who are more active. [...] But basically people just provide patches on Github for issues they find most important.
 
 There are several components that form MusicBrainz and that are necessary for its functioning: the **MusicBrainz Server**, **MusicBrainz Database**, **web service** and related **client libraries**, and applications/services.
 
-The [MusicBrainz Server] (https://musicbrainz.org/doc/MusicBrainz_Server) is written in Perl and is an open source software application that provides the primary interface to the [MusicBrainz Database] (https://musicbrainz.org/doc/MusicBrainz_Database). Users can edit the data on the website, and the web service power client applications like MusicBrainz Picard.
+The [MusicBrainz Server](https://musicbrainz.org/doc/MusicBrainz_Server) is written in Perl and is an open source software application that provides the primary interface to the [MusicBrainz Database](https://musicbrainz.org/doc/MusicBrainz_Database). Users can edit the data on the website, and the web service power client applications like MusicBrainz Picard.
 
-The MusicBrainz Database contains all the music metadata (that includes information about artists, recordings, releases, works and labels), and is built on the PostgreSQL relational database engine and is written in Perl. The full history of all the changes that the MusicBrainz community has made is also stored in this database. The core data of the database is in the public domain as is released under the CC0 license while accessory/supplementary data is released under the CC BY-NC-SA 3.0 license (more information about the database and - if you want, to download it - can be accessed on the [MusicBrainz Database] (http://musicbrainz.org/doc/MusicBrainz_Database) website).
+The MusicBrainz Database contains all the music metadata (that includes information about artists, recordings, releases, works and labels), and is built on the PostgreSQL relational database engine and is written in Perl. The full history of all the changes that the MusicBrainz community has made is also stored in this database. The core data of the database is in the public domain as is released under the CC0 license while accessory/supplementary data is released under the CC BY-NC-SA 3.0 license (more information about the database and - if you want, to download it - can be accessed on the [MusicBrainz Database](http://musicbrainz.org/doc/MusicBrainz_Database) website).
 
 The development of [Picard](http://picard.musicbrainz.org) started in 2003, and the development of its recent structure started in 2007. The developer community is mostly situated in North America and Europe.
 
@@ -98,7 +95,7 @@ The following graph and table shows the number of commits over the years (includ
 
 ![](commits_by_year.png)
 
-|   Year       | Number of commits in period | Total number of commits | Releases |
+|          Year| Number of commits in period | Total number of commits |  Releases|
 |------------- | --------------------------- | ----------------------- | -------- |
 |2016          | 29 (0.80%)                  | 3619                    |          |
 |2015          | 227 (6.27%)                 | 3590                    | <ul><li>release-1.3.2 (06-01-2015)</li></ul> |
@@ -114,7 +111,7 @@ The following graph and table shows the number of commits over the years (includ
 
 The top contributor to the project has changed over the years as shown in the following table:
 
-| Year        |Author                     |    Commits (%)      |
+|   Year      |Author                     |    Commits (%)      |
 |-------------|---------------------------|---------------------|
 |2016         |Laurent Monin              |13 (44.83% of 29)    |
 |2015         |Laurent Monin              |137 (60.35% of 227)  |
