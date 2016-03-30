@@ -98,19 +98,19 @@ The following graph and table shows the number of commits over the years (includ
 
 ![](commits_by_year.png)
 
-   Year       | Number of commits in period | Total number of commits | Releases
-------------- | --------------------------- | ----------------------- | --------
-2016          | 29 (0.80%)                  | 3619                    |
-2015          | 227 (6.27%)                 | 3590                    | <li>release-1.3.2 (06-01-2015)</li>
-2014          | 955 (26.39%)                | 3363                    | <li>release-1.3.1 (20-12-2014)</li><li>release-1.3 (20-10-2014)</li>
-2013          | 492 (13.59%)                | 2408                    | <li>release-1.2 (30-03-2013)</li>
-2012          | 344 (9.51%)                 | 1916                    | <li>release-1.1 (03-09-2012)</li><li>release-1.0 (02-06-2012)</li>
-2011          | 387 (10.69%)                | 1572                    | <li>release-0.16 (23-10-2011)</li><li>release-0.15.1 (31-07-2011)</li><li>release-0.15 (17-07-2011)</li><li>release-0.14 (15-05-2011)</li><li>release-0.13 (06-03-2011)</li>
-2010          | 52 (1.44%)                  | 1185                    |
-2009          | 203 (5.61%)                 | 1133                    | <li>release-0.12.1 (01-11-2009)</li><li>release-0.12 (25-10-2009)</li>
-2008          | 178 (4.92%)                 | 930                     | <li>release-0.11 (01-12-2008)</li><li>release-0.10 (27-07-2008)</li>
-2007          | 451 (12.46%)                | 752                     | <li>release-0.9.0 (16-12-2007)</li>
-2006          | 301 (8.32%)                 | 301                     |
+|   Year       | Number of commits in period | Total number of commits | Releases
+|------------- | --------------------------- | ----------------------- | --------
+|2016          | 29 (0.80%)                  | 3619                    |
+|2015          | 227 (6.27%)                 | 3590                    | <ul><li>release-1.3.2 (06-01-2015)</li></ul>
+|2014          | 955 (26.39%)                | 3363                    | <ul><li>release-1.3.1 (20-12-2014)</li><li>release-1.3 (20-10-2014)</li></ul>
+|2013          | 492 (13.59%)                | 2408                    | <ul><li>release-1.2 (30-03-2013)</li></ul>
+|2012          | 344 (9.51%)                 | 1916                    | <ul><li>release-1.1 (03-09-2012)</li><li>release-1.0 (02-06-2012)</li></ul>
+|2011          | 387 (10.69%)                | 1572                    | <ul><li>release-0.16 (23-10-2011)</li><li>release-0.15.1 (31-07-2011)</li><li>release-0.15 (17-07-2011)</li><li>release-0.14 (15-05-2011)</li><li>release-0.13 (06-03-2011)</li></ul>
+|2010          | 52 (1.44%)                  | 1185                    |
+|2009          | 203 (5.61%)                 | 1133                    | <ul><li>release-0.12.1 (01-11-2009)</li><li>release-0.12 (25-10-2009)</li></ul>
+|2008          | 178 (4.92%)                 | 930                     | <ul><li>release-0.11 (01-12-2008)</li><li>release-0.10 (27-07-2008)</li></ul>
+|2007          | 451 (12.46%)                | 752                     | <ul><li>release-0.9.0 (16-12-2007)</li></ul>
+|2006          | 301 (8.32%)                 | 301                     |
 
 The top contributor to the project has changed over the years as shown in the following table:
 
