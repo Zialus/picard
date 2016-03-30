@@ -26,7 +26,7 @@ The name chosen for the software is a homage to Captain Jean-Luc Picard, the mai
 #### Functional Requirements (Features)
 
 **Clustering** : 
-Picard reads and process the metadata from the files. Pressing the "Cluster" button allows to group the files into album clusters. The "Unmatched files" folder stores the files that are not matched into album clusters.
+Picard reads and process the metadata from the files. Pressing the "Cluster" button allows to group the files into album clusters. The "Unmatched files" folder stores the files that are not matched into album clusters. 
 
 **Lookup and querying MusicBrainz** : 
 The lookup can be automatic or manual. By using the "Lookup" button in the toolbar, Picard will query MusicBrainz and attempt to find the best match to the user´s cluster or file. The alternative is to manually lookup. Also, if the user select a set of files and click "Scan", Picard will find AcoustIDs based on audio fingerprint for the files, and query MusicBrainz to find a track that matches them. 
@@ -71,7 +71,11 @@ Additionally, Picard can be customized using scripts and plugins (i.e. customize
 
 
 
-### Development
+### Development process
+
+Picard never had a very well defined development process. It started primarily as a single developer project, in which the community used to provide patches. Nowadays, since the project moved to Github, they use the pull-request functionality to receive bug fixes from the community. Over the years, the development process didn't change that much, as described in a response from a former Picard contributor to a (question) (https://community.metabrainz.org/t/picards-development-process/13577) posted by our group in the MetaBrainz Community forum.
+
+>I don't think there has been any thoughts on the development model for Picard, nor is there any strict model followed. In the early days it was mostly a single developer, supported by patches from the community. In the last years a lot of people have contributed and there is a small set of people who are more active. [...] But basically people just provide patches on Github for issues they find most important.
 
 There are several components that form MusicBrainz and that are necessary for its functioning: the **MusicBrainz Server**, **MusicBrainz Database**, **web service** and related **client libraries**, and applications/services. 
 
