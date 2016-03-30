@@ -73,7 +73,7 @@ Additionally, Picard can be customized using scripts and plugins (i.e. customize
 
 ### Development process
 
-Picard never had a very well defined development process. It started primarily as a single developer project, in which the community used to provide patches. Nowadays, since the project moved to Github, they use the pull-request functionality to receive bug fixes from the community. Over the years, the development process didn't change that much, as described in a response from a former Picard contributor to a (question) (https://community.metabrainz.org/t/picards-development-process/13577) posted by our group in the MetaBrainz Community forum.
+Picard never had a very well defined development process. It started primarily as a single developer project, in which the community used to provide patches. Nowadays, since the project moved to Github, they use the pull-request functionality to receive bug fixes from the community. Over the years, the development process didn't change that much, as described in a response from a former Picard contributor to a [question] (https://community.metabrainz.org/t/picards-development-process/13577) posted by our group in the MetaBrainz Community forum.
 
 >I don't think there has been any thoughts on the development model for Picard, nor is there any strict model followed. In the early days it was mostly a single developer, supported by patches from the community. In the last years a lot of people have contributed and there is a small set of people who are more active. [...] But basically people just provide patches on Github for issues they find most important.
 
