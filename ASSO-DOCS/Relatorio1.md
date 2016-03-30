@@ -90,7 +90,9 @@ Since its start, this project has had 40 contributors and a total of 3619 commit
 After analysing the number of commits over the years, we can conclude the most active phases and the current state of the project.
 The largest number of commits happened between 30th March 2013 and 20th December 2014, with 1340 commits, corresponding to release 1.3.1. The most inactive years of this project are 2010, with only 52 commits (8350 lines added and 7719 lines removed), and the current year (until 30th March), with only 29 commits (289 lines added and 175 lines removed).
 
-The following table shows the number of commits over the years (including the percentage of all commits), and the releases of each of those years.
+The following graph and table shows the number of commits over the years (including the percentage of all commits), and the releases of each of those years.
+
+![](commits_by_year.png)
 
    Year       | Number of commits in period | Total number of commits | Releases
 ------------- | --------------------------- | ----------------------- | --------
