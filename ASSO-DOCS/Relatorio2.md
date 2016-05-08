@@ -42,5 +42,16 @@ The "LockableObject" is a generalization of the "DataObject" and "Config.Section
 ![](processView2.png)
 
 When the program starts, the user is shown a dual-pane window, one being the visual representation of the Unmatched List and the other the visual representation of the Matched List.
-At that point the user can perform actions that only change the Matched list, the Unmatched List or both. For example, the user can add files by clicking the "Add Files" button, which is going to change both Unmatched and Matched Lists.
-Although some of the available actions are specific to either one of the panes, there are some actions that can be done in both panes, being them the **Remove** and **Save** a file. 
+At that point the user can perform actions that only change the Matched list, the Unmatched List or both.
+
+If the user simply adds more files(which he can do in a variety of different ways, but those differences are not really relevant for the control flow of the program), the program will automatically add those files to the correct list, and will move back to it's initial state waiting for more actions from the user.
+
+If, on the other hand, the user selects a file(or multiple files) then are many different actions/outcomes that can come out of that. !!!(FIX WEIRD PHRASING)!!!
+
+Although some of the available actions are specific to each of the panes, some actions are available for both panes, them being **Remove** and **Save**. Those will obivously make the program make sure that both lists are in a consistent state. !!!(Yes, No, Maybe)!!!
+
+After selecting files on right pane, the available actions are:
+
+- **select a different album**: in case the user wants to change some files, for which a match was found, to a different release of a particular album or to a totally different album altogether.
+
+- **move back to the Unmatched List**: in case the user wants to start over, because some part of the proccess went totally wrong !!!(LOLWUT??)!!!
