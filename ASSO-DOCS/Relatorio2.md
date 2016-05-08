@@ -44,7 +44,7 @@ The "LockableObject" is a generalization of the "DataObject" and "Config.Section
 When the program starts, the user is shown a dual-pane window, one being the visual representation of the Unmatched List and the other the visual representation of the Matched List.
 At that point the user can perform actions that only change the Matched list, the Unmatched List or both.
 
-If the user simply adds more files(which he can do in a variety of different ways, but those differences are not really relevant for the control flow of the program), the program will automatically add those files to the correct list, and will move back to it's initial state waiting for more actions from the user.
+If the user simply adds more files(which he can do in a variety of different ways, but those differences are not really relevant for the control flow of the program), the program will automatically add those files to the correct list, and will move back to its initial state waiting for more actions from the user.
 
 If, on the other hand, the user selects a file(or multiple files) then are many different actions/outcomes that can come out of that. !!!(FIX WEIRD PHRASING)!!!
 
