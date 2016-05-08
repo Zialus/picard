@@ -34,3 +34,13 @@ The "Item" class is a generalization of the classes "Cluster", "Album", "File" a
 The "File" class is composed by "Metadata", as well as the "Album" class, which is also composed by "Cluster".
 The "DataObject" class is a generalization of "Album" and "Track".
 The "LockableObject" is a generalization of the "DataObject" and "Config.Section", which in turn is composed by "Config" (that sets the configurations, e.g. sets current profile and upgrade configuration version to the latest).
+
+
+
+#### Proccess View
+
+![](processView2.png)
+
+When the program starts, the user is shown a dual-pane window, one being the visual representation of the Unmatched List and the other the visual representation of the Matched List.
+At that point the user can perform actions that only change the Matched list, the Unmatched List or both. For example, the user can add files by clicking the "Add Files" button, which is going to change both Unmatched and Matched Lists.
+Although some of the available actions are specific to either one of the panes, there are some actions that can be done in both panes, being them the **Remove** and **Save** a file. 
