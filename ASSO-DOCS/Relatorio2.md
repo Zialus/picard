@@ -25,3 +25,12 @@ The project has a main class "Tagger" which is composed by the following classes
 - **MainWindow**, which manages the graphical interface, and is composed by the classes:
   - **FileBrowser**, that allows to work with local files / browse the file system,
   - **MetadataBox**, that is responsible for presenting the detailed information of each file, also allowing user input to change the metadata,
+  - **MainPanel**, which corresponds to the main display area and program interaction.
+
+
+- **Cluster**, that allows to group the files into clusters (e.g. arrange tracks into albums).
+
+The "Item" class is a generalization of the classes "Cluster", "Album", "File" and "Track".
+The "File" class is composed by "Metadata", as well as the "Album" class, which is also composed by "Cluster".
+The "DataObject" class is a generalization of "Album" and "Track".
+The "LockableObject" is a generalization of the "DataObject" and "Config.Section", which in turn is composed by "Config" (that sets the configurations, e.g. sets current profile and upgrade configuration version to the latest).
