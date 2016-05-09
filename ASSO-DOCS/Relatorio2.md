@@ -35,8 +35,6 @@ The "File" class is composed by "Metadata", as well as the "Album" class, which 
 The "DataObject" class is a generalization of "Album" and "Track".
 The "LockableObject" is a generalization of the "DataObject" and "Config.Section", which in turn is composed by "Config" (that sets the configurations, e.g. sets current profile and upgrade configuration version to the latest).
 
-
-
 #### Process View
 
 ![](processView2.png)
@@ -44,7 +42,7 @@ The "LockableObject" is a generalization of the "DataObject" and "Config.Section
 When the program starts, the user is shown a dual-pane window, one being the visual representation of the Unmatched List and the other the visual representation of the Matched List.
 At that point the user can perform actions that only change the Matched list, the Unmatched List or both.
 
-If the user simply adds more files(which he can do in a variety of different ways, but those differences are not really relevant for the control flow of the program), the program will automatically add those files to the correct list, and will move back to its initial state waiting for more actions from the user.
+If the user simply adds more files (which he can do in a variety of different ways, but those differences are not really relevant for the control flow of the program), the program will automatically add those files to the correct list, and will move back to its initial state waiting for more actions from the user.
 
 If, on the other hand, the user selects a file (or multiple files), the program will make different actions available, each of which will lead to a different path in the proccess view.
 
@@ -59,4 +57,4 @@ When the user selects files on the right pane, the available actions are:
 When the user selects files on the left pane, the available actions are:
 
 - **Scan**: the program will use [AcoustID](https://acoustid.org/) to generate audio fingerprints, and try to check them against the MusicBrainz database.
-- **Lookup**: the program will do a [indexed search](https://musicbrainz.org/doc/Search#Indexed_search) on the MusicBrainz database and will return an album match if it finds a result with a score above what was defined in the program settings. 
+- **Lookup**: the program will do an [indexed search](https://musicbrainz.org/doc/Search#Indexed_search) on the MusicBrainz database and will return an album match if it finds a result with a score above what was defined in the program settings. 
