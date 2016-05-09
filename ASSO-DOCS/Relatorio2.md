@@ -37,7 +37,7 @@ The "LockableObject" is a generalization of the "DataObject" and "Config.Section
 
 
 
-#### Proccess View
+#### Process View
 
 ![](processView2.png)
 
