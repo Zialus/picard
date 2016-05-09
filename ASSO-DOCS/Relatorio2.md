@@ -51,7 +51,6 @@ Although some of the available actions are specific to each of the panes, some a
 When the user selects files on the right pane, the available actions are:
 
 - **Select a different album**: in case the user wants to change some files, for which a match was found, to a different release of a particular album or to a totally different album altogether.
-
 - **Move back to the Unmatched List**: in case the user wants to start over the tagging proccess
 
 When the user selects files on the left pane, the available actions are:
