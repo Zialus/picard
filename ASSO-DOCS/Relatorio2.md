@@ -46,12 +46,17 @@ At that point the user can perform actions that only change the Matched list, th
 
 If the user simply adds more files(which he can do in a variety of different ways, but those differences are not really relevant for the control flow of the program), the program will automatically add those files to the correct list, and will move back to its initial state waiting for more actions from the user.
 
-If, on the other hand, the user selects a file(or multiple files) then are many different actions/outcomes that can come out of that. !!!(FIX WEIRD PHRASING)!!!
+If, on the other hand, the user selects a file (or multiple files), the program will make different actions available, each of which will lead to a different path in the proccess view.
 
-Although some of the available actions are specific to each of the panes, some actions are available for both panes, them being **Remove** and **Save**. Those will obivously make the program make sure that both lists are in a consistent state. !!!(Yes, No, Maybe)!!!
+Although some of the available actions are specific to each of the panes, some actions are available for both panes, them being **Remove** and **Save**. In this case, the program will make sure that both lists are in a consistent state.
 
-After selecting files on right pane, the available actions are:
+When the user selects files on the right pane, the available actions are:
 
-- **select a different album**: in case the user wants to change some files, for which a match was found, to a different release of a particular album or to a totally different album altogether.
+- **Select a different album**: in case the user wants to change some files, for which a match was found, to a different release of a particular album or to a totally different album altogether.
 
-- **move back to the Unmatched List**: in case the user wants to start over, because some part of the proccess went totally wrong !!!(LOLWUT??)!!!
+- **Move back to the Unmatched List**: in case the user wants to start over the tagging proccess
+
+When the user selects files on the left pane, the available actions are:
+
+- **Scan**: the program will use [AcoustID](https://acoustid.org/) to generate audio fingerprints, and try to check them against the MusicBrainz database.
+- **Lookup**: the program will do a [indexed search](https://musicbrainz.org/doc/Search#Indexed_search) on the MusicBrainz database and will return an album match if it finds a result with a score above what was defined in the program settings. 
