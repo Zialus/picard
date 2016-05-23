@@ -41,9 +41,6 @@ The "LockableObject" is a generalization of the "DataObject" and "Config.Section
 
 ![](processView2.png)
 
-tirar a barra de sincornização e as databases e juntar numa atividade de refresh janelas.
-na escolha inicial, poder fechar programa
-
 When the program starts, the user is shown a dual-pane window, one being the visual representation of the Unmatched List and the other the visual representation of the Matched List.
 At that point the user can perform actions that only change the Matched list, the Unmatched List or both.
 
