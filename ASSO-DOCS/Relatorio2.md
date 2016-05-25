@@ -39,7 +39,7 @@ The "LockableObject" is a generalization of the "DataObject" and "Config.Section
 
 #### Process View
 
-![](processView2.png)
+![](processView.png)
 
 When the program starts, the user is shown a dual-pane window, one being the visual representation of the Unmatched List and the other the visual representation of the Matched List.
 At that point the user can perform actions that only change the Matched list, the Unmatched List or both.
