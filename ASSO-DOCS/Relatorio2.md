@@ -16,8 +16,6 @@
 
 ![](logicalview.png)
 
-adicionar alguns atributos às classes
-
 After analysing the project structure, we have chosen to represent the Logical view using a class diagram.
 Given the project complexity, we chose not to show all classes and to consider the most important only.
 
@@ -59,3 +57,15 @@ When the user selects files on the left pane, the available actions are:
 
 - **Scan**: the program will use [AcoustID](https://acoustid.org/) to generate audio fingerprints, and try to check them against the MusicBrainz database.
 - **Lookup**: the program will do an [indexed search](https://musicbrainz.org/doc/Search#Indexed_search) on the MusicBrainz database and will return an album match if it finds a result with a score above what was defined in the program settings. 
+
+#### Development View
+
+![](DevelopmentView.png)
+
+#### Physical view 
+
+![](PhysicalView.png)
+
+#### Use Cases
+
+![](useCases.png)
