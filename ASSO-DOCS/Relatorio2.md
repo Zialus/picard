@@ -24,7 +24,7 @@ In order to represent the organization of this project, we created 5 UML diagram
 
 + **Development (implementation) view** : represented by a component diagram; shows the main software components and their interactions.
 
-+ **Physical (deployment) view** : represented by a deployment diagram; this view is intended to represent the system through the interaction of software components with the system hardware.
++ **Physical (deployment) view** : represented by a deployment diagram; it is intended to represent the system through the interaction of software components with the system hardware.
 
 + **Process view** : represented by an activity diagram; shows the various system processes and their run-time interactions.
 
