@@ -12,6 +12,25 @@
 -   Tiago Martins
 -   Saúl Costa
 
+
+
+
+
+In order to represent the organization of this project, we created 5 UML diagrams for each of the 5 views of the 4 + 1 architectural view model.
+
+### The 4 + 1 architectural view model
+
++ **Logical view** : represented by a class or package diagram; shows the key abstractions of the system, traditionally in the form of classes, objects or packages. 
+
++ **Development (implementation) view** : represented by a component diagram; shows the main software components and their interactions.
+
++ **Physical (deployment) view** : represented by a deployment diagram; this view is intended to represent the system through the interaction of software components with the system hardware.
+
++ **Process view** : represented by an activity diagram; shows the various system processes and their run-time interactions.
+
++ **Use case view** : represented by a use case diagram; is responsible for the connection between all other 4 views  and represents some of the actions that the actors are allowed to do in the software.
+
+
 #### Logical View
 
 ![](logicalview.png)
@@ -62,9 +81,24 @@ When the user selects files on the left pane, the available actions are:
 
 ![](DevelopmentView.png)
 
+According to our analysis of the project, Picard has 6 key components: **Picard** (the main component), **Qt**, **Picard Ui**, **Plugins**, **Util** and **FileBrowser**.
+
+**Picard UI** component is responsible for the main interaction between user and software and implements a graphical user interface prototype, with which, user can perform various operations. 
+This prototype is then implemented by the Graphical user interfaces library **Qt**.
+
+The **Util** component contains common features to several software components and commonly used data structures.
+
+**Plugins** is the component responsible for adding specific features to Picard and **File browser** allows Picard to manage files and folders.
+
 #### Physical view 
 
 ![](PhysicalView.png)
+
+Picard runs on a single computer and it is a cross-platform application, because it can run on Windows environment, Linux or OS X.
+
+The application just requires **music files** that are loaded by the user, with various supported formats.
+
+
 
 #### Use Cases
 
