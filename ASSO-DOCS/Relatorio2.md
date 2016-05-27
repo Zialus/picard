@@ -33,7 +33,7 @@ In order to represent the organization of this project, we created 5 UML diagram
 
 #### Logical View
 
-![](logicalview.png)
+![](LogicalView.png)
 
 After analysing the project structure, we have chosen to represent the Logical view using a class diagram.
 Given the project complexity, we chose not to show all classes and to consider the most important only.
