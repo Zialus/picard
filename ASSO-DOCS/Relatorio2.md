@@ -12,9 +12,7 @@
 -   Tiago Martins
 -   Saúl Costa
 
-
-
-
+--
 
 In order to represent the organization of this project, we created 5 UML diagrams for each of the 5 views of the 4 + 1 architectural view model.
 
@@ -35,24 +33,30 @@ In order to represent the organization of this project, we created 5 UML diagram
 
 ![](LogicalView.png)
 
-After analysing the project structure, we have chosen to represent the Logical view using a class diagram.
-Given the project complexity, we chose not to show all classes and to consider the most important only.
+After analyzing the project structure, we have chosen to represent the Logical View using a class diagram.
+Given the project's complexity, we chose to represent only the most importante classes, and for each of them only the most important properties/methods.
 
-The project has a main class "Tagger" which is composed by the following classes:
+The project has a main class **Tagger** which is composed by the following classes:
+
 - **PluginManager**, which manages the plugins installed on the system.
-- **XmlWebService**, which is responsible for linking to the "Metabrainz" server.
+- **XmlWebService**, which is responsible for making a connection to the _Metabrainz_ server with a specific user login(**note** that only a few of the app's extra functionalities require this). It is also responsible for the download of the metadata and album lookup functionality.
 - **MainWindow**, which manages the graphical interface, and is composed by the classes:
   - **FileBrowser**, that allows to work with local files / browse the file system,
   - **MetadataBox**, that is responsible for presenting the detailed information of each file, also allowing user input to change the metadata,
   - **MainPanel**, which corresponds to the main display area and program interaction.
 
+Other classes include:
 
-- **Cluster**, that allows to group the files into clusters (e.g. arrange tracks into albums).
+- The **Cluster** class, which is responsible for the logical representation of groups of files that the user creates within the program (i.e. arrange tracks into albums).
 
-The "Item" class is a generalization of the classes "Cluster", "Album", "File" and "Track".
-The "File" class is composed by "Metadata", as well as the "Album" class, which is also composed by "Cluster".
-The "DataObject" class is a generalization of "Album" and "Track".
-The "LockableObject" is a generalization of the "DataObject" and "Config.Section", which in turn is composed by "Config" (that sets the configurations, e.g. sets current profile and upgrade configuration version to the latest).
+- The **File** class, which deals with information asssociated which each file. Some of it utilizes the structure defined in the **Metadata** class(e.g. _orig_metadata_ and _metadata_) while other properties, like _filename_ and _comparasion_weights_ are self defined.
+
+- The **Track** class, which stores the list of files that match against a particular track in an album. It also stores the metadata
+
+- The **Album** class, which represents the albums, whose information was downloaded from the MetaBrainz server, by storing their tracklist and also which files the program user is still missing in order to "complete" the album.
+
+- The **Item** class, which is a generalization of the classes **Cluster**, **Album**, **File** and **Track**. It forces all those classes to represent wether or not the object they refere to can be edited and wether it is an album or not.
+
 
 #### Process View
 
