@@ -34,7 +34,7 @@ In order to represent the organization of this project, we created 5 UML diagram
 ![](LogicalView.png)
 
 After analyzing the project structure, we have chosen to represent the Logical View using a class diagram.
-Given the project's complexity, we chose to represent only the most importante classes, and for each of them only the most important properties/methods.
+Given the project's complexity, we decided to represent only the most importante classes, and for each of them only the most important properties/methods.
 
 The project has a main class **Tagger** which is composed by the following classes:
 
@@ -51,11 +51,11 @@ Other classes include:
 
 - The **File** class, which deals with information asssociated which each file. Some of it utilizes the structure defined in the **Metadata** class(e.g. _orig_metadata_ and _metadata_) while other properties, like _filename_ and _comparasion_weights_ are self defined.
 
-- The **Track** class, which stores the list of files that match against a particular track in an album. It also stores the metadata
+- The **Track** class, which stores the list of files that match against a particular track in an album. It also stores the metadata.
 
-- The **Album** class, which represents the albums, whose information was downloaded from the MetaBrainz server, by storing their tracklist and also which files the program user is still missing in order to "complete" the album.
+- The **Album** class, which represents the albums, whose information was downloaded from the _MetaBrainz_ server, by storing their tracklist and also which files the program user is still missing in order to "complete" the album.
 
-- The **Item** class, which is a generalization of the classes **Cluster**, **Album**, **File** and **Track**. It forces all those classes to represent wether or not the object they refere to can be edited and wether it is an album or not.
+- The **Item** class, which is a generalization of the classes **Cluster**, **Album**, **File** and **Track**. It forces all those classes to represent whether or not the object they refere to can be edited and whether it is an album or not.
 
 
 #### Process View
