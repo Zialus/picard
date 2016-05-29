@@ -107,6 +107,6 @@ The application just requires **music files** that are loaded by the user, suppo
 
 ![](useCases.png)
 
-After the user installs and opens Picard, there are several possible actions that can be performed. However, our Use Cases diagram only represents the three main activities, one of them being the purpose of Picard, tagging and organizing music files, which can be done by adding files and finding matches on the Internet.
-The user can also modify several configurations, for example, the file naming convention and the tagging settings. It can also install plugins, some of them being *Feat. Artists Removed* that removes feat. artists from track titles, *Release Type* that appends information to EPs and Singles and *Last.fm*  that uses tags from Last.fm as genre.
+After the user installs and opens Picard, there are several possible actions that can be performed. However, our Use Cases diagram only represents the three primary activities, one of them being the main purpose of Picard, tagging and organizing music files, which can be done by adding files and finding matches on the Internet.
+The user can also modify several configurations, for example, the file naming convention and the tagging settings. He can also install [plugins](https://picard.musicbrainz.org/plugins/), some of them being *Feat. Artists Removed* that removes feat. artists from track titles, *Release Type* that appends information to EPs and Singles and *Last.fm*  that uses tags from Last.fm as genre.
 
