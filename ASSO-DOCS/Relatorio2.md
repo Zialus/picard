@@ -99,11 +99,9 @@ The **Util** component contains common features to several software components a
 
 ![](PhysicalView.png)
 
-Picard runs on a single computer and it is a cross-platform application, because it can run on Windows environment, Linux or OS X.
+Picard runs on a single computer and is a cross-platform application (it's available for Windows, Linux and OS X).
 
-The application just requires **music files** that are loaded by the user, with various supported formats.
-
-
+The application just requires **music files** that are loaded by the user, supporting various different formats.
 
 #### Use Cases
 
