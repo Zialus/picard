@@ -60,7 +60,7 @@ Other classes include:
 
 #### Process View
 
-![](ProcessView.png)
+![](process_view.png)
 
 When the program starts, the user is shown a dual-pane window, one being the visual representation of the Unmatched List and the other the visual representation of the Matched List.
 At that point the user can perform different actions, which include adding files, selecting previously added files or closing the program.
