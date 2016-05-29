@@ -63,13 +63,13 @@ Other classes include:
 ![](ProcessView.png)
 
 When the program starts, the user is shown a dual-pane window, one being the visual representation of the Unmatched List and the other the visual representation of the Matched List.
-At that point the user can perform actions that only change the Matched list, the Unmatched List or both.
+At that point the user can perform different actions, which include adding files, selecting previously added files or closing the program.
 
-If the user simply adds more files (which he can do in a variety of different ways, but those differences are not really relevant for the control flow of the program), the program will automatically add those files to the correct list, and will move back to its initial state waiting for more actions from the user.
+If the user simply adds more files (which he can do in a variety of different ways, but those differences are not really relevant for the control flow of the program), the program will automatically add those files to the correct list, files that haven't been tagged before go to the unmatched files list and files that have already been tagged to the matched list.
 
 If, on the other hand, the user selects a file (or multiple files), the program will make different actions available, each of which will lead to a different path in the proccess view.
 
-Although some of the available actions are specific to each of the panes, some actions are available for both panes, them being **Remove** and **Save**. In this case, the program will make sure that both lists are in a consistent state.
+Although some of the available actions are specific to each of the panes, some actions are available for both panes, them being **Remove** and **Save**.
 
 When the user selects files on the right pane, the available actions are:
 
@@ -80,6 +80,7 @@ When the user selects files on the left pane, the available actions are:
 
 - **Scan**: the program will use [AcoustID](https://acoustid.org/) to generate audio fingerprints, and try to check them against the MusicBrainz database.
 - **Lookup**: the program will do an [indexed search](https://musicbrainz.org/doc/Search#Indexed_search) on the MusicBrainz database and will return an album match if it finds a result with a score above what was defined in the program settings. 
+- **Cluster**: the program will create different folders inside the "Cluster" folder with the name that the files from the unmatched list are stored on the users system and will move all the possible files to the specific folders.
 
 #### Development View
 
