@@ -34,53 +34,53 @@ In order to represent the organization of this project, we created 5 UML diagram
 ![](LogicalView.png)
 
 After analyzing the project structure, we have chosen to represent the Logical View using a class diagram.
-Given the project's complexity, we decided to represent only the most importante classes, and for each of them only the most important properties/methods.
+Given the project's complexity, we decided to represent only the most important classes, and for each of them only the most important properties/methods.
 
 The project has a main class **Tagger** which is composed by the following classes:
 
-- **PluginManager**, which manages the plugins installed on the system.
-- **XmlWebService**, which is responsible for making a connection to the _Metabrainz_ server with a specific user login(**note** that only a few of the app's extra functionalities require this). It is also responsible for the download of the metadata and album lookup functionality.
-- **MainWindow**, which manages the graphical interface, and is composed by the classes:
-  - **FileBrowser**, that allows to work with local files / browse the file system,
-  - **MetadataBox**, that is responsible for presenting the detailed information of each file, also allowing user input to change the metadata,
-  - **MainPanel**, which corresponds to the main display area and program interaction.
+- **PluginManager**, which is responsible for managing operations related to the plugins installed on the system.
+- **XmlWebService**, which is responsible for making a connection to the _Metabrainz_ server with a specific user login(it should be **noted** that only a few of the applications's extra functionalities require this). It is also responsible for the download of the metadata and album lookup functionality.
+- **MainWindow**, which manages the graphical interface, and is composed by the following classes:
+  - **FileBrowser**, that gives a _view_ into the local filesystem allowing the use to browse it, and pick and choose files.
+  - **MetadataBox**, that is responsible for presenting the detailed information of each file, also allowing the user to directly edit the metadata.
+  - **MainPanel**, which corresponds to the main display area and application interaction.
 
 Other classes include:
 
-- The **Cluster** class, which is responsible for the logical representation of groups of files that the user creates within the program (i.e. arrange tracks into albums).
+- The **Cluster** class, which is responsible for the logical representation of groups of files that the user creates within the application (wether automatically or manually).
 
-- The **File** class, which deals with information asssociated which each file. Some of it utilizes the structure defined in the **Metadata** class(e.g. _orig_metadata_ and _metadata_) while other properties, like _filename_ and _comparasion_weights_ are self defined.
+- The **File** class, which deals with information associated which each file. Some of that information follows the structure defined in the **Metadata** class (e.g. _orig_metadata_ and _metadata_) while other properties, like _filename_ and _comparasion_weights_ are self defined.
 
-- The **Track** class, which stores the list of files that match against a particular track in an album. It also stores the metadata.
+- The **Track** class, which stores the list of files that match against a particular track in an album. It also stores the metadata, downloaded from the server, about that particular track.
 
-- The **Album** class, which represents the albums, whose information was downloaded from the _MetaBrainz_ server, by storing their tracklist and also which files the program user is still missing in order to "complete" the album.
+- The **Album** class, which represents the albums, whose information was downloaded from the _MetaBrainz_ server, and does so by storing their tracklist, and also by listing which files the user is still missing in order to "complete" the album.
 
-- The **Item** class, which is a generalization of the classes **Cluster**, **Album**, **File** and **Track**. It forces all those classes to represent whether or not the object they refere to can be edited and whether it is an album or not.
+- The **Item** class, which is a generalization of the classes **Cluster**, **Album**, **File** and **Track**. It forces all those classes to represent whether or not the object they refer to can be edited and whether it is an album or not.
 
 
 #### Process View
 
 ![](process_view.png)
 
-When the program starts, the user is shown a dual-pane window, one being the visual representation of the Unmatched List and the other the visual representation of the Matched List.
-At that point the user can perform different actions, which include adding files, selecting previously added files or closing the program.
+When the application starts, the user is shown a dual-pane window, one being the visual representation of the Unmatched List and the other the visual representation of the Matched List.
+At that point the user can perform different actions, which include adding files, selecting previously added files or closing the application.
 
-If the user simply adds more files (which he can do in a variety of different ways, but those differences are not really relevant for the control flow of the program), the program will automatically add those files to the correct list, files that haven't been tagged before go to the unmatched files list and files that have already been tagged to the matched list.
+If the user simply adds more files (which he can do in a variety of different ways, but those differences are not really relevant for the control flow of the application), the application will automatically add those files to the correct list, files that haven't been tagged before go to the unmatched files list and files that have already been tagged to the matched list.
 
-If, on the other hand, the user selects a file (or multiple files), the program will make different actions available, each of which will lead to a different path in the proccess view.
+If, on the other hand, the user selects a file (or multiple files), the application will make different actions available, each of which will lead to a different path in the process view.
 
 Although some of the available actions are specific to each of the panes, some actions are available for both panes, them being **Remove** and **Save**.
 
 When the user selects files on the right pane, the available actions are:
 
 - **Select a different album**: in case the user wants to change some files, for which a match was found, to a different release of a particular album or to a totally different album altogether.
-- **Move back to the Unmatched List**: in case the user wants to start over the tagging proccess
+- **Move back to the Unmatched List**: in case the user wants to start over the tagging process
 
 When the user selects files on the left pane, the available actions are:
 
-- **Scan**: the program will use [AcoustID](https://acoustid.org/) to generate audio fingerprints, and try to check them against the MusicBrainz database.
-- **Lookup**: the program will do an [indexed search](https://musicbrainz.org/doc/Search#Indexed_search) on the MusicBrainz database and will return an album match if it finds a result with a score above what was defined in the program settings. 
-- **Cluster**: the program will create different folders inside the "Cluster" folder with the name that the files from the unmatched list are stored on the users system and will move all the possible files to the specific folders.
+- **Scan**: the application will use [AcoustID](https://acoustid.org/) to generate audio fingerprints, and try to check them against the _MusicBrainz_ database.
+- **Lookup**: the application will do an [indexed search](https://musicbrainz.org/doc/Search#Indexed_search) on the _MusicBrainz_ database and will return an album match if it finds a result with a score above what was defined in the application's settings. 
+- **Cluster**: the application will create different folders inside the "Cluster" folder with the name that the files from the unmatched list are stored on the users system and will move all the possible files to the specific folders.
 
 #### Development View
 
