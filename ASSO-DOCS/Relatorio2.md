@@ -14,7 +14,7 @@
 
 --
 
-In order to represent the organization of this project, we created 5 UML diagrams for each of the 5 views of the 4 + 1 architectural view model.
+In order to represent the architecture of this project, we created 5 UML diagrams for each of the 5 views included in the 4 + 1 architectural view model.
 
 ### The 4 + 1 architectural view model
 
@@ -41,19 +41,19 @@ The project has a main class **Tagger** which is composed by the following class
 - **PluginManager**, which is responsible for managing operations related to the plugins installed on the system.
 - **XmlWebService**, which is responsible for making a connection to the _Metabrainz_ server with a specific user login(it should be **noted** that only a few of the applications's extra functionalities require this). It is also responsible for the download of the metadata and album lookup functionality.
 - **MainWindow**, which manages the graphical interface, and is composed by the following classes:
-  - **FileBrowser**, that gives a _view_ into the local filesystem allowing the use to browse it, and pick and choose files.
+  - **FileBrowser**, that gives a _view_ into the local filesystem allowing the user to browse through it, pick and choose files.
   - **MetadataBox**, that is responsible for presenting the detailed information of each file, also allowing the user to directly edit the metadata.
   - **MainPanel**, which corresponds to the main display area and application interaction.
 
 Other classes include:
 
-- The **Cluster** class, which is responsible for the logical representation of groups of files that the user creates within the application (wether automatically or manually).
+- The **Cluster** class, which is responsible for the logical representation of groups of files that the user creates within the application (whether automatically or manually).
 
 - The **File** class, which deals with information associated which each file. Some of that information follows the structure defined in the **Metadata** class (e.g. _orig_metadata_ and _metadata_) while other properties, like _filename_ and _comparasion_weights_ are self defined.
 
 - The **Track** class, which stores the list of files that match against a particular track in an album. It also stores the metadata, downloaded from the server, about that particular track.
 
-- The **Album** class, which represents the albums, whose information was downloaded from the _MetaBrainz_ server, and does so by storing their tracklist, and also by listing which files the user is still missing in order to "complete" the album.
+- The **Album** class, which represents the albums, whose information was downloaded from the _MetaBrainz_ server, and does so by storing their tracklist, and by listing which files the user is still missing in order to "complete" the album.
 
 - The **Item** class, which is a generalization of the classes **Cluster**, **Album**, **File** and **Track**. It forces all those classes to represent whether or not the object they refer to can be edited and whether it is an album or not.
 
@@ -88,7 +88,7 @@ When the user selects files on the left pane, the available actions are:
 
 According to our analysis of the project, Picard has 6 key components: **Picard** (the main component), **Qt**, **Picard Ui**, **Plugins**, **Util** and **FileBrowser**.
 
-**Picard UI** component is responsible for the main interaction between user and software and implements a graphical user interface prototype, with which, user can perform various operations. 
+**Picard UI** component is responsible for the main interaction between user and software and implements a graphical user interface prototype, with which user can perform various operations. 
 This prototype is then implemented by the Graphical user interfaces library **Qt**.
 
 The **Util** component contains common features to several software components and commonly used data structures.
